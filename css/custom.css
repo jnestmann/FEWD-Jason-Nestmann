@@ -1,0 +1,235 @@
+﻿body {
+  touch-action: manipulation;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 75px;
+  background-color: #2B3E50;
+  line-height: 1.8em;
+}
+
+h1, h2 {
+    font-family: Philosopher;
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5em;
+}
+
+a:hover.tabbottom {
+    border-radius: 0;
+}
+
+.container .jumbotron {
+    color: #fff;
+    border-radius: 3px;
+    text-shadow: 2px 2px 4px #000;
+}
+.container {
+    margin: auto;
+}
+.jumbotron {
+    display: none;
+}
+
+.navbar-brand {
+    height: auto;
+}
+
+#NM_logo{
+    float: left;
+    width: 50px;
+    margin: auto 0 auto 10px;
+}
+
+.navbar {
+      background-color:rgb(80, 66, 43);
+      border-bottom: 1px solid black;
+}
+.navbar-brand h1,
+.navbar-brand h2 {
+    font-size: 1em;
+    line-height: 1.1em;
+    margin: 0;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.btn-contact-form {
+    border-radius: 20px;
+    border: 1px solid #444;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flexContainer a {
+        flex: 1 100%;
+        margin: auto;
+}
+
+.img-div {
+    text-align: center;
+}
+.img-thumbnail {
+    border: 2px solid white;
+}
+.profile-pic {
+    max-width: 30%;
+    min-width: 150px;
+    border-radius: 30px;
+    flex-grow: 1;
+    align-self: center;
+}
+
+.portfolio-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.portfolio-flex a {
+    margin: 5px;
+    border: 1px solid #aaa;
+    width: 100%;
+}
+.body-content {
+    margin-bottom: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+.copyright {
+    align-self: flex-start;
+    vertical-align: middle;
+    margin: auto 0;
+    padding-left: 10px;
+    color: #444;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.social_media {
+    padding-right: 10px;
+}
+.icon-linkedin,
+.icon-github {
+  font-size: 48px;
+  color: #444;
+  padding: 10px;
+  text-shadow: 2px 2px 0px #fff;
+}
+
+.skill-list ul {
+    padding-left: 30px;
+}
+
+.skill {
+    flex: 1 40%;
+    padding: 0 5px;
+    margin: auto;
+}
+.fill-row {
+    margin-top: 20px;
+}
+
+/*--------------------------------------------------------------
+                      @ Media Queries
+--------------------------------------------------------------*/
+/* Bootstrap uses 768 (sm), 992 (md), 1200 (lg) */
+
+
+@media (min-width: 768px) {
+    .container {
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .body-content {
+        margin: 10px auto 20px auto;
+        max-width: 90%;
+    }
+    .navbar-brand {
+        padding-left: 30px;
+    }
+    .navbar-nav {
+        float: right;
+        margin: 0;
+    }
+    a:hover.tabbottom {
+        border-radius: 0 0 15px 15px;
+    }
+    .img-div {
+        vertical-align: middle;
+    }
+    .profile-pic {
+        max-width: 70%;
+    }
+    .skill-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .portfolio-flex {
+        flex-direction: row;
+    }
+    .portfolio-flex p {
+        flex: 1 50%;
+        max-width: 50%;
+        padding: 5px;
+    }
+    .copyright {
+        padding-left: 30px;
+    }
+    .social_media {
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .skill-list {
+        justify-content: space-between;
+    }
+    .last-skill {
+        margin: auto;
+        align-self: flex-start;
+    }
+    .skill {
+        flex: 1 30%;
+    }
+    .profile-pic {
+        max-width: 300px;
+    }
+    .portfolio-flex {
+        border: 1px double #596a7b;
+        padding: 20px;
+        min-height: 200px;
+    }
+    .portfolio-flex p {
+        padding: 0 5px;
+    }
+    .portfolio-flex a {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .body-content {
+        max-width: 80%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio site for Jason Nestmann as a software and web developer." />
+    <meta name="author" content="Jason Nestmann" />
+
+    <title>Jason Nestmann | Web &amp; Software Developer</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Philosopher" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+</head>
+<body>
+
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-github" viewBox="0 0 32 32">
+                <title>github</title>
+                <path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+            </symbol>
+            <symbol id="icon-linkedin" viewBox="0 0 32 32">
+                <title>linkedin</title>
+                <path d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 26h-4v-14h4v14zM10 10c-1.106 0-2-0.894-2-2s0.894-2 2-2c1.106 0 2 0.894 2 2s-0.894 2-2 2zM26 26h-4v-8c0-1.106-0.894-2-2-2s-2 0.894-2 2v8h-4v-14h4v2.481c0.825-1.131 2.087-2.481 3.5-2.481 2.488 0 4.5 2.238 4.5 5v9z"></path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img id="NM_logo" src="images/N_logo.svg" alt="Nestmann Logo" />
+                <div class="navbar-brand">
+                    <h1>Jason Nestmann</h1>
+                    <h2>Web &amp; Software Developer</h2>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse" style="height: 0.666667px;">
+                <ul class="nav navbar-nav">
+                    <!--<li><a href="/" class="tabbottom">Home</a></li>-->
+                    <li><a href="#contact_form" data-toggle="modal" class="tabbottom">Contact</a></li>
+                    <li><a href="documents//Nestmann, Jason Resume.pdf" download="" class="tabbottom">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contact_form">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">Contact Form</h2>
+                </div>
+                <div class="modal-body">
+                    <form class="form" action="#" method="post">
+                        <div class="form-group">
+                            <label class="sr-only" for="visitorName">Name</label>
+                            <input type="text" class="form-control" id="visitorName" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="visitorEmail">Email</label>
+                            <input type="email" class="form-control" id="visitorEmail" placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="visitorComment">Comment</label>
+                            <textarea class="form-control" rows="3" id="visitorComment" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default btn-contact-form" data-dismiss="modal">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+
+        <div class="row">
+            <div class="col-sm-6 col-lg-5 img-div">
+
+                <img class="img-thumbnail profile-pic" src="images/profile_pic.jpg" alt="Jason Nestmann Photograph">
+            </div>
+            <div class="col-sm-6 col-lg-5 col-lg-offset-1">
+                <h2>Welcome:</h2>
+                <p>I created this website to showcase examples of my work and provide additional information about what skills I can bring to prospective projects.  I hope you find the information helpful. If you have any questions, please feel free to contact me.</p>
+                <a class="btn btn-default" href="#contact_form" data-toggle="modal" style="width: 100%">Contact Me &raquo;</a>
+
+            </div>
+        </div>
+        <hr class="section_break" />
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Skills:</h2>
+                <div class="skill-panel">
+                    <ul class="skill-list">
+                        <li class="skill">Photography</li>
+                        <li class="skill">Adobe Photoshop</li>
+                        <li class="skill">Adobe Illustrator</li>
+                        <li class="skill">HTML5</li>
+                        <li class="skill">CSS3</li>
+                        <li class="skill">JavaScript &amp; jQuery</li>
+                        <li class="skill">Excel</li>
+                        <li class="skill">VBA</li>
+                        <li class="skill">VB.Net</li>
+                        <li class="skill">Python</li>
+                        <li class="skill">Ruby on Rails</li>
+                    </ul>
+                </div>
+                <hr class="section_break" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <a name="portfolio"></a><h2>Portfolio</h2>
+                <p>Here are some examples of sites and site mock-ups.  Please note that some of these links may take you outside this domain address.  Thank you.</p>
+            </div>
+            <div class="col-md-6 col-sm-12 portfolio-flex">
+                <p><a class="btn btn-default" href="portfolio/doodleSketch/index.html">Doodle Sketch&raquo;</a></p>
+                <p><a class="btn btn-default" href="portfolio/photoGallery/photo.html">photo gallery &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; Jason Nestmann</p>
+        <div class="social_media">
+            <a href="https://github.com/jnestmann">
+                <svg class="icon icon-github">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/nestmann-jason-13432a9/">
+                <svg class="icon icon-linkedin">
+                    <use xlink:href="#icon-linkedin"></use>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿body {
+  font-family: "Open Sans", sans-serif;
+}
+
+footer {
+    width: 100%;
+    text-align:center;
+    font-size: .8em;
+}
+
+#toyframe {
+    display: none;
+}
+
+#apptitle {
+  padding-top: 12px;
+}
+
+#sketcharea {
+  position: relative;
+  width: 500px;
+  height: 340px;
+  background-color: silver;
+  border: 2pt solid black;
+  border-radius: 10px;
+}
+
+#controlbar {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 500px;
+  margin: auto;
+  font-size: 10pt;
+  min-height: 30px;
+}
+
+.controlbutton {
+  border-radius: 5px;
+  min-width: 80px;
+  min-height: 30px;
+}
+
+table {
+  width: 500px;
+  margin: auto;
+}
+
+td {
+  min-width: 80px;
+}
+
+
+@media (min-width: 600px) {
+    body {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+    footer {
+        width: 600px;
+    }
+    #toyframe {
+        display: block;
+        background-color: maroon;
+        width: 600px;
+        height: 480px;
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+        box-shadow: 5px 5px black;
+        border: 1pt solid black;
+    }
+    #small_screen_message {
+        display: none;
+    }
+}

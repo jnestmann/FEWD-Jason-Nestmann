@@ -1,0 +1,143 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#main-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#main-banner {
+    position: relative;
+}
+
+#main-banner img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    box-shadow: 2px 0 20px white;
+}
+
+#main-banner h1 {
+    color: white;
+    text-align: center;
+    z-index: 1010;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    text-shadow: 3px 0 20px darkgrey, -1px -1px 0 black, 1px 1px 0 darkgrey;
+    
+}
+
+#gallery a {
+    margin: 0;
+    padding: 0;
+}
+
+#gallery img {
+    border-radius: 5px;
+    padding: 8px;
+    max-width: 90%;
+    border: 1px solid black;
+    background-color: white;
+}
+
+#gallery ul {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+#gallery li {
+    margin: auto;
+    padding: 10px 0;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+#overlay {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+    z-index: 2000;
+    margin: 0;
+    padding: 0;
+}
+
+#overlay img {
+    margin-top: 20%;
+    max-width: 90%;
+    padding: 8px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#overlay p {
+    color: white;
+}
+
+
+/* ------------------------------------------
+    Media Queries
+-------------------------------------------*/
+
+@media (min-width: 640px) {
+        
+    #main-container {
+        width: 100%;
+    }
+    #main-banner img {
+        margin-bottom: 20px;
+    }
+    
+    #main-banner h1 {
+        bottom: 40px;
+        font-size: 3em;
+    }
+    
+    #gallery li {
+        max-width: 40%;
+        padding: 15px;
+    }
+    
+    #overlay img {
+        margin-top: 30px;
+        max-height: 70vh;
+    }
+    
+    #overlay p {
+        color: white;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    #gallery li {
+        max-width: 30%;
+    }
+}
+
+
+
+
+
+
