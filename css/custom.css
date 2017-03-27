@@ -1,5 +1,4 @@
-﻿body {
-  touch-action: manipulation;
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -19,23 +18,18 @@ a:hover.tabbottom {
     border-radius: 0;
 }
 
-.container .jumbotron {
-    color: #fff;
-    border-radius: 3px;
-    text-shadow: 2px 2px 4px #000;
-}
 .container {
     margin: auto;
 }
-.jumbotron {
-    display: none;
+.body-content {
+    max-width: 90%;
 }
 
 .navbar-brand {
     height: auto;
 }
 
-#NM_logo{
+#N_logo{
     float: left;
     width: 50px;
     margin: auto 0 auto 10px;
@@ -128,7 +122,8 @@ footer {
     padding-right: 10px;
 }
 .icon-linkedin,
-.icon-github {
+.icon-github,
+.icon-treehouse {
   font-size: 48px;
   color: #444;
   padding: 10px;
@@ -148,20 +143,21 @@ footer {
     margin-top: 20px;
 }
 
-/*--------------------------------------------------------------
+/**************************************************************
                       @ Media Queries
---------------------------------------------------------------*/
+**************************************************************/
 /* Bootstrap uses 768 (sm), 992 (md), 1200 (lg) */
 
 
 @media (min-width: 768px) {
     .container {
-        padding-left: 0;
-        margin-left: 0;
+        margin: auto;
+        max-width: 90%;
     }
     .body-content {
-        margin: 10px auto 20px auto;
-        max-width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 10px;
     }
     .navbar-brand {
         padding-left: 30px;
@@ -229,7 +225,7 @@ footer {
 
 @media (min-width: 1200px) {
     .body-content {
-        max-width: 80%;
+        min-width: 85%;
         margin: auto;
     }
 }
