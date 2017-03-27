@@ -1,17 +1,17 @@
-﻿
-  var canvas = document.getElementById("sketcharea");
-  var ctx = canvas.getContext("2d");
-  var x, y, startMode;
+const canvas = document.getElementById("sketcharea");
+const ctx = canvas.getContext("2d");
 
-   startMode = 2;
-   x = getStartX(startMode);
-   y = getStartY(startMode);
+const startMode = 2;
+let x = getStartX(startMode);
+let y = getStartY(startMode);
 
-  ctx.beginPath();
-  ctx.moveTo(x,y);
-  ctx.lineCap="round";
-  ctx.lineJoin="round";
-  ctx.lineWidth=".5";
+const fRefresh = () => window.location.reload();
+
+ctx.beginPath();
+ctx.moveTo(x,y);
+ctx.lineCap="round";
+ctx.lineJoin="round";
+ctx.lineWidth=".5";
 
 
 document.getElementById("left").addEventListener("mousedown", function() {fMove(-1, 0);});
@@ -21,6 +21,8 @@ document.getElementById("right").addEventListener("mousedown", function() {fMove
 document.getElementById("up").addEventListener("click", function() {fMove(0,-1);});
 
 document.getElementById("down").addEventListener("click", function() {fMove(0,1);});
+
+document.getElementById("refresh").addEventListener("click", fRefresh);
 
 document.getElementById("apptitle").addEventListener("click", fRefresh);
 
@@ -43,7 +45,7 @@ function fMove(changeX, changeY) {
 }
 
 function getStartX(mode) {
-  var fx;
+  let fx;
 
   if (mode == 1) {
       fx = prompt("Please set x coordinate");
@@ -62,7 +64,7 @@ function getStartX(mode) {
 
 
 function getStartY(mode) {
-  var fy;
+  let fy;
 
   if (mode == 1) {
       fy = prompt("Please set y coordinate");
@@ -77,12 +79,4 @@ function getStartY(mode) {
   }
 
   return fy;
-}
-
-function fMove2() {
-  
-}
-
-function fRefresh() {
-  //want to refresh the screen and be able to start over
 }
