@@ -5,10 +5,11 @@ body {
   padding-top: 75px;
   background-color: #2B3E50;
   line-height: 1.8em;
+  font-family: Nunito;
 }
 
 h1, h2 {
-    font-family: Philosopher;
+    font-family: "Crimson Text";
     padding: 0;
     margin: 0;
     margin-bottom: .5em;
@@ -152,9 +153,9 @@ footer {
 @media (min-width: 768px) {
     .container {
         margin: auto;
-        max-width: 90%;
     }
     .body-content {
+        max-width: 90%;
         margin-top: 20px;
         margin-bottom: 20px;
         padding-top: 10px;
@@ -203,6 +204,9 @@ footer {
 }
 
 @media (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
     .skill-list {
         justify-content: space-between;
     }
@@ -231,7 +235,7 @@ footer {
 
 @media (min-width: 1200px) {
     .body-content {
-        min-width: 85%;
+        max-width: 85%;
         margin: auto;
     }
 }
