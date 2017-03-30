@@ -44,11 +44,11 @@ h1, h2 {
 
 body {
     line-height: 1.8em;
-    font-family: Nunito;
+    font-family: Nunito, sans-serif;
 }
 
 h1, h3 {
-    font-family: "Crimson Text";
+    font-family: "Crimson Text", sans-serif;
 }
 
 .navbar-brand h1 {
