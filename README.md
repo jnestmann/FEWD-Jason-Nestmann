@@ -12,16 +12,25 @@ This website is intended to satisfy the Code Louisville 2017 FEWD class personal
 
 The [FEWD Project Requirements](https://github.com/CodeLouisville/Student-Resources/wiki/Front-end-Web-Development-Project-Requirements) include:
 1. Responsive to three different devices or browser sizes.
+
     The page should be responsive at 768 and 992.
     At 768 it goes from one to two columns.  The navbar also goes from the toggle button to right floated words.
     At 992 the profile picture moves to after the welcome paragraph.  The portfolio links also move into a box next to the portfolio paragraph instead of floating under the paragraph.  Also increased font size on larger screen.
+    
 2. Utilizes at least one framework or library
+
     The main portfolio page uses Bootstrap.
+    
 3. Code has appropriate comments
+
     I sectioned my css.
+    
 4. Project posted on GitHub
+
     [GitHub repo](https://github.com/jnestmann/FEWD-Jason-Nestmann)
+    
 5. Project must include a README
+
     The README has both description and instruction paragraphs.
     
     
