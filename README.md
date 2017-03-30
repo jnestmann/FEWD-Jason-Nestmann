@@ -38,3 +38,5 @@ The [FEWD Project Requirements](https://github.com/CodeLouisville/Student-Resour
 I also included an image gallery page that uses JQuery.  The image gallery is responsive, adjusting the overlay based on screen size.
 
 The other link is to an app using just javascript (no libraries) and is responsive at the 600px breakpoint to ensure that the browser window is wide enough for the application to appear on the screen without scrolling.
+
+Finally, I created a favicon based on the Treehouse videos and included it on the portfolio page.
